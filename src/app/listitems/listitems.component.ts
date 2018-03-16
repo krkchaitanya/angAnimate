@@ -26,10 +26,6 @@ import {
         animate(300)
       ]),
       transition('* => void', [
-        style({
-          transform: 'translateX(100px)',
-          opacity: 0
-        }),
         animate(300,style({
           transform: 'translateX(100px)',
           opacity: 0
