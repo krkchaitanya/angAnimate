@@ -7,13 +7,15 @@ import {HttpModule, Http} from "@angular/http";
 
 
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations"
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ListitemsComponent } from './listitems/listitems.component'
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListitemsComponent
   ],
   imports: [
     BrowserModule,

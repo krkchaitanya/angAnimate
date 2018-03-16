@@ -1,0 +1,22 @@
+<div class="container col-xs-6 col-sm-6 col-md-10 col-lg-10 col-xl-10" 
+[ngStyle]="{backgroundColor:'lightgrey'}">
+  <h3 [ngStyle]="{color:'#382b2b'}">list component.....<strong>Animations</strong></h3>
+  <hr/>
+  <form class="form-group"  >
+    <input type="text" placeholder="enter item" required #ite name="text" class="form-control">
+    <br/>
+    <button class="btn btn-success"  (click)="onPushingItem(ite)" >PushItemToList</button>
+    <br/>
+    <br/>
+      <div   [ngStyle]="{backgroundColor:'grey',
+                          padding:'20px',
+                          maxHeight:'400px',
+                          overflowY:'scroll'
+                        }">
+        <ul class="list-group" [ngStyle]="{listStyleType:'none'}" 
+        *ngFor="let it of items">
+                <li class="list-group-item"  [@liit]   (click)="onDel(it)" >{{it}}</li>
+        </ul>     
+    </div>
+  </form>
+</div>
