@@ -5,7 +5,8 @@ import {
   style,
   state,
   transition,
-  animate
+  animate,
+  keyframes
  } from '@angular/core';
 
 @Component({
@@ -23,7 +24,7 @@ import {
           opacity:0,
           transform:'translateX(-100px)'
         }),
-        animate(300)
+        animate(500)
       ]),
       transition('* => void', [
         animate(300,style({
@@ -42,6 +43,10 @@ export class ListitemsComponent implements OnInit {
     "twotwo"
   ];
 
+  names:any[]=[
+    "personone",
+    "persontwo"
+  ];
 
   constructor() { }
 

@@ -1,0 +1,23 @@
+<div class="container" [ngStyle]="{backgroundColor:'#af9a9a'}">
+  <div class="row">
+    <div class=" col-xs-10 col-sm-10 col-md-10 col-lg-12">
+      <br/>
+      <button class="btn btn-primary" (click)="onAnimate()">Animate</button>
+      <button class="btn btn-primary" (click)="onShrink()">Shrink</button>
+      <br/>
+      <hr/>
+      <div [@divState]="state" [ngStyle]="{
+                                            width:'100px',
+                                            height:'100px',
+                                            color:'lightpink'
+                                          }">
+      </div>
+      <br/>
+      <div [@wildState]="wildState" [ngStyle]="{ width:'100px', 
+                                              height:'100px',
+                                              color:'lightpink'
+                                            }">
+     </div>
+    </div>
+  </div>
+</div>
