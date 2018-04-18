@@ -56,8 +56,7 @@ export class ListitemsComponent implements OnInit {
 
   onPushingItem(ite){
     this.items.push(ite.value);
-    
-    
+    ite.value="";
   }
 
   onDel(ele){
