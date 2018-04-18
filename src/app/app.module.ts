@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { ListitemsComponent } from './listitems/listitems.component';
 import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component'
+import { MainComponent } from './main/main.component';
+import { IntroductionComponent } from './introduction/introduction.component'
 
 const rootRoutes=[
+  {path:"",component:IntroductionComponent},
   {path:"anganimations",component:MainComponent},
   {path:"listanimations",component:ListitemsComponent}
 ];
@@ -22,7 +24,8 @@ const rootRoutes=[
     AppComponent,
     ListitemsComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
