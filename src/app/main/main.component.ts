@@ -1,4 +1,12 @@
-import { Component, OnInit , trigger, state, style, animate,transition} from '@angular/core';
+import { 
+  Component, 
+  OnInit , 
+  trigger, 
+  state, 
+  style, 
+  animate,
+  transition
+} from '@angular/core';
 
 @Component({
   selector: 'app-main',
